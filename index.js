@@ -1,8 +1,10 @@
+function reverseString(word) {
+  return word.split("").reverse().join("");
+}
+
 function isPalindrome(word) {
-  // Write your algorithm here
-    const words=word.toLowerCase().replace(/\s/g, '')
-    const reversedword = words.split('').reverse().join('')
-    return words === reversedword;
+  const reversedWord = reverseString(word);
+  return word === reversedWord;
 }
 console.log(isPalindrome("Mom"));
 console.log(isPalindrome("Taco cat"));
